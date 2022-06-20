@@ -9,7 +9,7 @@ fetch(urlUser)
         let contenedor = document.querySelector(".divHija8");
         console.log(generos)
 
-        for (let i = 0; i < generos.data.length; i++) {
+        for (let i = 0; i < 5; i++) {
 
              contenedor.innerHTML +=    
              

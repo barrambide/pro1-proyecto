@@ -36,15 +36,17 @@
 .contenedorArtistas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .contenedorAlbums{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .contenedorTracks{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -283,7 +285,7 @@ border-radius: 50px;
 
    .divPadre8{
     background-color: black;
-   height: 535px;
+   height: 250px;
    width: 300px;
    padding: 15px;
    padding-top: 0px;
@@ -295,7 +297,7 @@ border-radius: 50px;
    
    
    .divHija8{
-       height: 535px;
+       height: 250px;
        width: 300px;
        background-color: red;
        border-radius: 50px;
