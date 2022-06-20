@@ -313,6 +313,13 @@ border-radius: 50px;
 
    
 }
+.articleGeneroos{
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row;
+
+
+}
 .aLetra{
     color: black;
 }
@@ -320,4 +327,29 @@ border-radius: 50px;
     background-color: rgb(0, 0, 0);
     height: 30vh;
 
+}
+.botonBuscador{
+    width: 35px;
+    height: 25px;
+    background-color: red;
+    
+
+
+}
+.botonBuscador::before{
+    content: "Ir";
+}
+
+
+.divBoton{
+    width: 50px;
+    height: 10px;
+    color: red;
+
+}
+.contenedorGeneros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
 }

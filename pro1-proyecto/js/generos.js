@@ -13,8 +13,11 @@ fetch(urlUser)
 
              contenedor.innerHTML +=    
              
-             `<div class="divPadre8">
-                  <div class="divHija8">
+             ` <section class="contenedorGeneros">
+
+              <article class="articleGeneroos">
+                   <div class="divPadre8">
+                      <div class="divHija8">
                     <span class="saltopagina1">
                           <a href="detail-generos.html?id=${generos.data[i].id}'"><img src="${generos.data[i].picture}" ></a>
                    </span>
@@ -23,7 +26,9 @@ fetch(urlUser)
                       </ul>
 
                   </div>  
-                </div> `   
+                </div> 
+                </article>
+                </section> `   
         }
           
             
