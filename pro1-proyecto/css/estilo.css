@@ -1,0 +1,308 @@
+
+
+.header{
+ background-color: rgb(0, 0, 0);
+  height: 50vh;
+
+}
+.letraHeader{
+   font-family: 'Times New Roman';
+   font-style: italic;
+   text-align: center;
+   color: red;
+   
+
+}
+.divLogo{
+    text-align: center;
+    height: 50px;
+    
+}
+
+.dropbtn{
+    background-color: rgb(179, 179, 179);
+    color: #666666;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+   
+    box-shadow: 0px 10px 20px 0.2px rgb(92, 0, 153, 0.1);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    ;
+    
+  
+}
+
+
+.drop-content{
+    display: none;
+    background-color: #aca9a9;
+    margin-top: 8px;
+    border-radius: 15px;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0.2px rgb(92, 0, 153, 0.1);
+    padding: 10px 0px;
+}
+
+.drop-content a{
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: #2e004d;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+.divHija-content a:hover{
+    background-color: #d699ff;
+    color: white;
+}
+
+.divHija:hover .drop-content{
+    display: flex;
+}
+
+.dropdown{
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.divPadre{
+ background-color: rgb(177, 0, 0);
+ height: 30px;
+  padding: 10px;
+  width: 150px  ;
+  justify-content: space-around;
+
+}
+  
+
+.divHija{
+  background-color: rgb(0, 0, 0);
+  height: 30px;
+  width: 150px ;
+  justify-content: center;
+  
+  
+}
+.articleHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spanForm{
+    text-align: right;
+}
+
+.divPadre2{
+    background-color: rgb(177, 0, 0);
+    height: 30px;
+     padding: 10px;
+     width: 150px  ;
+     justify-content: space-around;
+   
+   }
+     
+   
+   .divHija2{
+     background-color: rgb(0, 0, 0);
+     height: 30px;
+     width: 150px 
+     
+     
+   }
+
+   .letraDiv3{
+
+    font-size: medium;
+    color: white;
+   }
+
+
+    .body{
+
+        background-color: rgb(180, 172, 164);
+        margin: 0px;
+    }
+   .botonPopulares{
+    display: flex;
+    justify-content: left;
+    margin-top: 140px;
+}
+.saltopagina1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+}
+.saltopagina1{
+    background-image: linear-gradient(red,black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 300ms ease;
+   text-align: center;
+   font-size: 24px;
+}
+
+.saltopagina1:hover{
+    background-size: 100% 3px;
+}
+
+.saltopagina2{
+    text-align: right;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+}
+.saltopagina2{
+    background-image: linear-gradient(red,black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 300ms ease;
+   text-align: center;
+   font-size: 24px;
+}
+
+.saltopagina2:hover{
+    background-size: 100% 3px;
+}
+
+
+.divPadre4{
+ background-color: black;
+height: 250px;
+width: 300px;
+padding: 15px;
+padding-top: 0px;
+border-style: solid;
+border-color: red;
+border-radius: 50px;
+
+}
+
+
+.divHija4{
+    height: 250px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50px;
+    
+    text-align: center;
+
+}
+.divPadre5{
+    background-color: black;
+   height: 250px;
+   width: 300px;
+   padding: 15px;
+   padding-top: 0px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 50px;
+   
+   }
+.divHija5{
+    height: 250px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50px;
+    
+    text-align: right;
+
+}
+
+.divPadre6{
+    background-color: black;
+   height: 475px;
+   width: 300px;
+   padding: 15px;
+   padding-top: 0px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 50px;
+   
+   }
+   
+   
+   .divHija6{
+       height: 475px;
+       width: 300px;
+       background-color: red;
+       border-radius: 50px;
+       
+       text-align: center;
+   
+   }
+
+   .divPadre7{
+    background-color: black;
+   height: 535px;
+   width: 300px;
+   padding: 15px;
+   padding-top: 0px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 50px;
+   
+   }
+   
+   
+   .divHija7{
+       height: 535px;
+       width: 300px;
+       background-color: red;
+       border-radius: 50px;
+       
+       text-align: center;
+   
+   }
+
+   .divPadre8{
+    background-color: black;
+   height: 535px;
+   width: 300px;
+   padding: 15px;
+   padding-top: 0px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 50px;
+   
+   }
+   
+   
+   .divHija8{
+       height: 535px;
+       width: 300px;
+       background-color: red;
+       border-radius: 50px;
+       
+       text-align: center;
+   
+   }
+
+.articleArtistas{
+
+    display: flex;
+    flex-direction: row;
+
+   
+}
+.aLetra{
+    color: black;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    height: 30vh;
+
+}
