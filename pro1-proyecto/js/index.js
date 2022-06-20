@@ -1,8 +1,9 @@
 let proxi = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart"
 let endpoint =   " https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
 let URL = endpoint;
-let artistasContenido= ``
-let artistasSection = ""
+let artistasContenido= document.querySelector(".contenedorArtistas")
+let tracksContenido =document.querySelector(".contenedorTracks")
+let ablumsContenido =document.querySelector(".contenedorAlbums")
 
 
 fetch(URL)
@@ -17,24 +18,58 @@ fetch(URL)
     let artistas = data.artists.data;
 
 
+   for (let i = 0; i <5 ; i++) {
+     artistasContenido.innerHTML += ` <article class="articleArtistas">
+     <div class="divPadre4">
+         <div class="divHija4">
+             <span class="saltopagina1"><a href="detail-artistas.html?id=${artistas[i].id}" class="aLetra"><i>${artistas[i].name}
+                         <br><i>${artistas[i].type} </i></i></a></span>
+             <br>
+             <a href="detail-artistas.html"><img src="${artistas[i].picture_big}" alt="mariabecerra"
+                     height="190px"></a>
+         </div>
+     </div>
+ </article>`
+   
+    
+   }
+   let tracks = data.tracks.data;
+
+
    for (let i = 0; i < 5 ; i++) {
-     artistasContenido += `  <article class="canciones">
-     <span class="portada">
-         <a href="detail-artistas.html"><img src="${data.artists.picture}" alt="mariabecerra"
-                 ></a>
-     </span>
-     <ul class="detalle">
-         <li class="tituloname"><a href="./detail-artistas.html">
-                 <h1>"${data.artists.data.name}"</h1>
-             </a></li>
-         <li class="fechapeli">2021</li>
-     </ul>
+     tracksContenido.innerHTML += ` <article class="articleArtistas">
+     <div class="divPadre4">
+         <div class="divHija4">
+             <span class="saltopagina1"><a href="detail-canciones.html?id=${tracks[i].id}" class="aLetra"><i>${tracks[i].title_short}
+                         <br><i>${tracks[i].type} </i></i></a></span>
+             <br>
+             <a href="detail-artistas.html"><img src="${tracks[i].album.cover}" alt="mariabecerra"
+                     height="190px"></a>
+         </div>
+     </div>
+ </article>`
+   
+    
+   }
+   let albums = data.albums.data;
+
+
+   for (let i = 0; i < 5 ; i++) {
+     ablumsContenido.innerHTML += ` <article class="articleArtistas">
+     <div class="divPadre4">
+         <div class="divHija4">
+             <span class="saltopagina1"><a href="detail-albumes.html?id=${albums[i].id}" class="aLetra"><i>${albums[i].title}
+                         <br><i>${albums[i].type} </i></i></a></span>
+             <br>
+             <a href="detail-artistas.html"><img src="${albums[i].cover}" alt="mariabecerra"
+                     height="190px"></a>
+         </div>
+     </div>
  </article>`
    
     
    }
 
-     artistasSection.innerHTML= artistasContenido;
 
 
 

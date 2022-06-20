@@ -33,6 +33,19 @@
     
   
 }
+.contenedorArtistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenedorAlbums{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedorTracks{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .drop-content{
