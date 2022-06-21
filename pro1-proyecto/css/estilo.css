@@ -48,6 +48,11 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.contenedorGeneros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
 .drop-content{
@@ -205,10 +210,30 @@ border-color: red;
 border-radius: 50px;
 
 }
+.divPadre4G{
+    background-color: black;
+   height: 450px;
+   width: 300px;
+   padding: 15px;
+   padding-top: 0px;
+   border-style: solid;
+   border-color: red;
+   border-radius: 50px;
+   
+   }
 
 
 .divHija4{
     height: 250px;
+    width: 300px;
+    background-color: red;
+    border-radius: 50px;
+    
+    text-align: center;
+
+}
+.divHija4G{
+    height: 450px;
     width: 300px;
     background-color: red;
     border-radius: 50px;
@@ -347,9 +372,4 @@ border-radius: 50px;
     color: red;
 
 }
-.contenedorGeneros{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-}
+

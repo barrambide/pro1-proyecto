@@ -43,7 +43,7 @@ fetch(URL)
              <span class="saltopagina1"><a href="detail-canciones.html?id=${tracks[i].id}" class="aLetra"><i>${tracks[i].title_short}
                          <br><i>${tracks[i].type} </i><i></i>${tracks[i].artist.name}</i></a></span>
              <br>
-             <a href="detail-artistas.html"><img src="${tracks[i].album.cover}" alt="mariabecerra"
+             <a href="detail-canciones.html"><img src="${tracks[i].album.cover}" alt="mariabecerra"
                      height="190px"></a>
          </div>
      </div>
@@ -56,13 +56,13 @@ fetch(URL)
 
    for (let i = 0; i < 5 ; i++) {
      ablumsContenido.innerHTML += ` <article class="articleArtistas">
-     <div class="divPadre4">
-         <div class="divHija4">
+     <div class="divPadre4G">
+         <div class="divHija4G">
              <span class="saltopagina1"><a href="detail-albumes.html?id=${albums[i].id}" class="aLetra"><i>${albums[i].title}
-                         <br><i>${albums[i].type} </i></i></a></span>
+                         <br><i>${albums[i].type}</i><br><i>${albums[i].artist.name}</i></a></span>
              <br>
              <a href="detail-artistas.html"><img src="${albums[i].cover}" alt="mariabecerra"
-                     height="190px"></a>
+                     height="190px">a>
          </div>
      </div>
  </article>`

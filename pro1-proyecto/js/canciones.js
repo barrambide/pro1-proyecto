@@ -13,17 +13,23 @@ fetch(endpoint)
   })
   .then(function (track) {
     console.log(track);
-      cancionesContenido.innerHTML = `
+       for (let i = 0; i <5; i++) {
+        cancionesContenido.innerHTML = `<div class="divPadre6">
+        <div class="divHija6">
      <span class="saltopagina1"><a href="detail-canciones.html?id=${track.id}" class="aLetra"><i>${track.title_short}
                  <br><i>${track.type}</i></i></a></span>
      <br>
-     <a href="detail-canciones.html?id=${track.id}"><img src=${track.album.cover_big} alt="mariabecerra"
+     <a href="detail-canciones.html?id=${track.id}"><img src=${track.album} alt="mariabecerra"
              height="190px"></a>
           <ul class="saltopagina1"> <li class="li" ><a href="detail-artistas.html?id=${track.artist.id}"><h3 class="aLetra"> ${track.artist.name}</h3></a></li><li class="li" ><a><h3 class="aLetra">Bpm : ${track.bpm}</h3></a></li>
              <li class="li"><a href="detail-albumes.html?id=${track.album.id}"><h3 class="aLetra">Album: ${track.album.title}</h3></a></li>
-             </ul>       
-    
-`
+             </ul> 
+             </div>      
+                 </div>
+                `
+        
+       }
+     
 
   }).catch(function (errores) {
     console.log(errores);

@@ -1,4 +1,3 @@
-
 let proxi = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart"
 let endpoint =   " https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
 let URL = endpoint;
@@ -28,14 +27,8 @@ for (let i = 0; i < 5 ; i++) {
   </div>
 </article>`
 
- 
-}
 
-
-
-
-
-}).catch(function(errores){
+}}).catch(function(errores){
   console.log(errores);
 
 })
