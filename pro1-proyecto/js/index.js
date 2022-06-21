@@ -1,6 +1,6 @@
-let proxi = "https://api.allorigins.win/raw?url=https://api.deezer.com/chart"
-let endpoint =   " https://api.allorigins.win/raw?url=https://api.deezer.com/chart";
-let URL = endpoint;
+let proxy = "https://api.allorigins.win/raw?url=";
+let endpoint = "https://api.deezer.com/chart";
+let URL = proxy + endpoint;
 let artistasContenido= document.querySelector(".contenedorArtistas")
 let tracksContenido =document.querySelector(".contenedorTracks")
 let ablumsContenido =document.querySelector(".contenedorAlbums")
@@ -19,13 +19,14 @@ fetch(URL)
 
 
    for (let i = 0; i <5 ; i++) {
-     artistasContenido.innerHTML += ` <article class="articleArtistas">
+     artistasContenido.innerHTML += `
+  <article class="articleArtistas">
      <div class="divPadre4">
          <div class="divHija4">
              <span class="saltopagina1"><a href="detail-artistas.html?id=${artistas[i].id}" class="aLetra"><i>${artistas[i].name}
                          <br><i>${artistas[i].type} </i></i></a></span>
              <br>
-             <a href="detail-artistas.html"><img src="${artistas[i].picture_big}" alt="mariabecerra"
+             <a href="detail-artistas.html?id=${artistas[i].id}"><img src="${artistas[i].picture_big}" alt="mariabecerra"
                      height="190px"></a>
          </div>
      </div>

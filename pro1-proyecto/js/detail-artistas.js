@@ -56,10 +56,10 @@ fetch(url)
         cancionesContenido.innerHTML += ` <article class="articleArtistas">
         <div class="divPadre4">
             <div class="divHija4">
-                <span class="saltopagina1"><a href="./detail-artistas.html" class="aLetra"><i>${tracks[i].title_short}
+                <span class="saltopagina1"><a href=""detail-canciones.html?id=${tracks[i].id}" class="aLetra"><i>${tracks[i].title_short}
                             <br><i>${tracks[i].type} </i></i></a></span>
                 <br>
-                <a href="detail-artistas.html"><img src="${tracks[i].album.cover}" alt="mariabecerra"
+                <a href="detail-canciones.html?id=${tracks[i].id}"><img src="${tracks[i].album.cover}" alt="mariabecerra"
                         height="190px"></a>
             </div>
         </div>
